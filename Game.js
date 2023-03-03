@@ -21,9 +21,11 @@ const styles = StyleSheet.create({
 
   target: {
     fontSize: 40,
-    backgroundColor: 'red',
+    color: 'magenta',
+    backgroundColor: 'white',
     marginHorizontal: 50,
     textAlign: 'center',
+    borderRadius: 30,
   },
 });
 export default Game;
