@@ -41,5 +41,24 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     borderRadius: 30,
   },
+
+  randomContainer: {
+    flex: 1,
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'space-around',
+  },
+
+  STATUS_PLAYING: {
+    backgroundColor: '#bbb',
+  },
+
+  STATUS_WON: {
+    backgroundColor: 'green',
+  },
+
+  STATUS_LOST: {
+    backgroundColor: 'red',
+  },
 });
 export default Game;
