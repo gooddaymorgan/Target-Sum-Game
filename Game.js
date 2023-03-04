@@ -32,18 +32,21 @@ class Game extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'magenta',
+    backgroundColor: 'hotpink',
     flex: 1,
     paddingTop: 30,
   },
 
   target: {
     fontSize: 40,
-    color: 'magenta',
-    backgroundColor: 'white',
+    backgroundColor: 'deeppink',
+    color: 'white',
     marginHorizontal: 50,
     textAlign: 'center',
     borderRadius: 30,
+    padding: 10,
+    borderColor: 'white',
+    borderWidth: 3,
   },
 
   randomContainer: {
@@ -51,6 +54,20 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     flexWrap: 'wrap',
     justifyContent: 'space-around',
+  },
+
+  random: {
+    backgroundColor: 'white',
+    color: 'deeppink',
+    width: 100,
+    marginHorizontal: 15,
+    marginVertical: 25,
+    fontSize: 35,
+    textAlign: 'center',
+    borderRadius: 20,
+    padding: 10,
+    borderColor: 'deeppink',
+    borderWidth: 3,
   },
 
   STATUS_PLAYING: {
