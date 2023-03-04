@@ -17,10 +17,14 @@ class Game extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.target}>{this.target}</Text>
-        {this.randomNumbers.map((randomNumber, index) => (
-          <Text key={index}>{randomNumber}</Text>
-        ))}
+        <Text style={styles.target}>{this.target} </Text>
+        <View style={styles.randomContainer}>
+          {this.randomNumbers.map((randomNumber, index) => (
+            <Text style={styles.random} key={index}>
+              {randomNumber}
+            </Text>
+          ))}
+        </View>
       </View>
     );
   }
