@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 
 import {View, Text, StyleSheet} from 'react-native';
 
+import RandomNumber from './RandomNumber';
+
 class Game extends React.Component {
   static propTypes = {
     randomNumberCount: PropTypes.number.isRequired,
@@ -14,15 +16,17 @@ class Game extends React.Component {
   target = this.randomNumbers
     .slice(0, this.props.randomNumberCount - 2)
     .reduce((acc, curr) => acc + curr, 0);
+  //Shuffle numbers
   render() {
     return (
       <View style={styles.container}>
         <Text style={styles.target}>{this.target} </Text>
         <View style={styles.randomContainer}>
           {this.randomNumbers.map((randomNumber, index) => (
-            <Text style={styles.random} key={index}>
-              {randomNumber}
-            </Text>
+            <RandomNumber key={index} number={randomNumber} />
+            // <Text style={styles.random} key={index}>
+            //   {randomNumber}
+            // </Text>
           ))}
         </View>
       </View>
